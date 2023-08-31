@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <base href="/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/main.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Job Listing</title>
+    <style>
+      .attribution { font-size: 13px; text-align: center; }
+      .attribution a { color: #2C3A3A; }
+      .filters {
+        color:hsl(180, 29%, 50%);
+        background-color: hsl(180, 52%, 96%);
+        border-radius: 0.375rem;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0px 2px;    
+      }
+    
+      .key-span {
+        position: relative;
+        font-weight: 700;
+        padding: 10px;    
+      }
+    
+      .remove-button {
+        width: 32px;
+        height: 32px;
+        background-color: hsl(180, 29%, 50%);
+        padding: 10px;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+
+    </style>
+</head>
+
+<body class="font-league-sparton">
+    <section>
+        <header class="bg-darkCyan">
+            <img class="w-full" src="./images/bg-header-desktop.svg" alt="Header Image">
+        </header>
+        <main class="bg-[#effafa] w-full px-1">
+
+          <div id="filterContainer"
+                class="hidden mx-auto max-w-5xl bg-white py-4 px-6 relative -top-8 rounded-lg shadow-xl shadow-cyan-dark/10 justify-between items-center">
+                <div id="tabletContainer" class="search__content flex flex-wrap gap-2">
+                  <span> </span>
+                </div>
+                <button id="clearButton" class="font-bold text-darkCyan justify-items-end cursor-pointer hover:underline">Clear</button>
+              </div>
+
+           <!-- <div id="search" class="search -top-8 w-full h-auto bg-white font-body rounded-xl py-[18px] px-10 box-border -mt-9 opacity-100 justify-between transition-opacity duration-1000 shadow-xl md:mb-12 flex">
+              <div class="search__content" id="search-content"><span class=" close-tag">
+                        HTML
+                    </span></div>
+              <button id="clear" class="search__clear lg:ml-12 bg-none border-none text-sm text-color-header-background font-body font-bold outline-none cursor-pointer hover:underline md:ml-5">
+                Clear
+              </button>
+            </div>-->
+            
+
+            <!-- Flex Container -->
+            <div class="flex flex-col space-y-12 md:space-y-6 container mx-auto max-w-5xl py-24" id="jobs">
+
+            </div>
+            <div class="attribution">
+              Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+              Coded by <a href="https://www.frontendmentor.io/profile/Mikdem">Michael Demeke</a>.
+            </div>
+        </main>
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
