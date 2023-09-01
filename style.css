@@ -89,3 +89,7 @@
 .search__clear:hover {
     text-decoration: underline;
 }
+
+.circle {
+    border-radius: 100% !important;
+}
