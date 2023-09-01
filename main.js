@@ -191,3 +191,4 @@ window.addEventListener('click', (event) => {
     setJobsListings(searchBarTags);
 });
 setJobsListings();
+});
