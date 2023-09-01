@@ -22,8 +22,12 @@ axios.get('https://my.api.mockaroo.com/jobs.json?key=8ce01d50')
         if (a.featured  && !b.featured) {
             return -1;
         }
-        if (!a.featured && b.featured){
+        else if (!a.featured && b.featured){
             return 1;
+        }else if(a.isnew && !b.isnew){
+            return -1;
+        }else if(!a.isnew && b.isnew){
+            return 1
         }
         return 0;
     });
