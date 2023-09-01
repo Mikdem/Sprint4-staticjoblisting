@@ -14,31 +14,6 @@
     <style>
       .attribution { font-size: 13px; text-align: center; }
       .attribution a { color: #2C3A3A; }
-      .filters {
-        color:hsl(180, 29%, 50%);
-        background-color: hsl(180, 52%, 96%);
-        border-radius: 0.375rem;
-        cursor: pointer;
-        overflow: hidden;
-        margin: 0px 2px;    
-      }
-    
-      .key-span {
-        position: relative;
-        font-weight: 700;
-        padding: 10px;    
-      }
-    
-      .remove-button {
-        width: 32px;
-        height: 32px;
-        background-color: hsl(180, 29%, 50%);
-        padding: 10px;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 150ms;
-      }
-
     </style>
 </head>
 
@@ -56,15 +31,6 @@
                 </div>
                 <button id="clearButton" class="font-bold text-darkCyan justify-items-end cursor-pointer hover:underline">Clear</button>
               </div>
-
-           <!-- <div id="search" class="search -top-8 w-full h-auto bg-white font-body rounded-xl py-[18px] px-10 box-border -mt-9 opacity-100 justify-between transition-opacity duration-1000 shadow-xl md:mb-12 flex">
-              <div class="search__content" id="search-content"><span class=" close-tag">
-                        HTML
-                    </span></div>
-              <button id="clear" class="search__clear lg:ml-12 bg-none border-none text-sm text-color-header-background font-body font-bold outline-none cursor-pointer hover:underline md:ml-5">
-                Clear
-              </button>
-            </div>-->
             
 
             <!-- Flex Container -->
@@ -77,7 +43,8 @@
             </div>
         </main>
     </section>
-    <script src="./main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
