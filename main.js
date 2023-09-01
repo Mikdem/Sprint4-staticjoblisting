@@ -54,7 +54,7 @@ function getJobListingHTML(jobData, filterTags = []) {
     let jobListingHTML = `
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center bg-white px-4 pb-8 md:p-8 rounded-md shadow-xl shadow-darkCyan/10; border-l-[6px] border-l-darkCyan;" ${jobData.featured === '' ? '' : 'style="border-left-width: 6px; border-color: #5BA4A4;"'}>
                     <div class="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6 min-w-max">
-                        <div class="w-16 h-16 rounded-full relative -top-8 md:top-0">
+                        <div class="circle w-16 h-16 rounded-full md:w-auto md:h-auto relative -top-8 md:top-0">
                             <img src="${jobData.logo}" alt="${jobData.company}">
                         </div>
                         <div class="space-y-2">
